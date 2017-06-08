@@ -1,0 +1,37 @@
+* {
+    background-color: rgb(187, 247, 244);
+    text-align: center;
+}
+
+.buttons {
+    font-size: 24px;
+    border: dashed black 2px;
+    transition-duration: 0.4s;
+}
+
+.buttons:hover {
+    background-color: white;
+}
+
+.buttons:active {
+    background-color: black;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+}
+
+#red {
+    background-color: tomato;
+}
+
+#blue {
+    background-color: aqua;
+}
+
+#green {
+    background-color: forestgreen;
+}
+
+.colorview {
+    height: 30%;
+    border: solid black 3px;
+}

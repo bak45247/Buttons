@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Choose a button</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="{{url_for('static', filename='css/index.css')}}" media="screen" />
+</head>
+<body>
+    <div>
+        <h>Choose a Button :D</h>
+    </div>
+    <div class="buttonView">
+        <button id="red" class="buttons">Red</button>
+        <button id="green" class="buttons">Green</button>
+        <button id="blue" class="buttons">Blue</button>
+    </div>
+    <div class="colorview"><br /></div>
+    <div>
+        <h2 id="textValue">Color RGB Value</h2>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $(".buttons").click(function() {
+                $.ajax({url: "/find_color", data: {"key": this.id.valueOf()}, success: function(result) {
+                    $("#textValue").html(result);
+                    $(".colorview").css("background-color", result);
+                }});
+            });
+        });
+    </script>
+</body>
+</html>
