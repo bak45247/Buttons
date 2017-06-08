@@ -1,0 +1,50 @@
+* {
+    background-color: rgb(201, 204, 209);
+    text-align: center;
+}
+
+.buttons {
+    font-size: 48px;
+    border: dashed #36373A 2px;
+    font-family: 'Ruda';
+}
+
+
+.buttons:active {
+    background-color: #36373A;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+}
+
+#red {
+    background-color: tomato;
+}
+
+#blue {
+    background-color: aqua;
+}
+
+#green {
+    background-color: forestgreen;
+}
+
+.colorview {
+    height: 250px;
+    width: 98%;
+    margin: auto;
+    border: solid #36373A 3px;
+}
+
+#pageTitle {
+    font-size: 36px;
+    color: rgb(54, 64, 81);
+    font-family: 'Varela';
+    margin-top: 100px;
+}
+
+#textValue {
+    font-size: 48px;
+    color: rgb(143, 171, 217);
+    font-family: 'Varela';
+    text-transform: capitalize;
+}
