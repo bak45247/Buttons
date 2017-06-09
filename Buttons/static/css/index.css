@@ -1,20 +1,17 @@
 * {
-    background-color: rgb(187, 247, 244);
+    background-color: #c9ccd1;
     text-align: center;
 }
 
 .buttons {
-    font-size: 24px;
-    border: dashed black 2px;
-    transition-duration: 0.4s;
+    font-size: 48px;
+    border: dashed #36373A 2px;
+    font-family: 'Ruda';
 }
 
-.buttons:hover {
-    background-color: white;
-}
 
 .buttons:active {
-    background-color: black;
+    background-color: #36373A;
     box-shadow: 0 5px #666;
     transform: translateY(4px);
 }
@@ -32,6 +29,22 @@
 }
 
 .colorview {
-    height: 30%;
-    border: solid black 3px;
+    height: 250px;
+    width: 98%;
+    margin: auto;
+    border: solid #36373A 3px;
+}
+
+#pageTitle {
+    font-size: 36px;
+    color: #364051;
+    font-family: 'Varela';
+    margin-top: 100px;
+}
+
+#textValue {
+    font-size: 48px;
+    color: #8fabd9;
+    font-family: 'Varela';
+    text-transform: capitalize;
 }
