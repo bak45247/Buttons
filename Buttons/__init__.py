@@ -10,12 +10,13 @@ def button():
 @app.route("/find_color")
 def find_color():
     pass_in = request.args
+    color_in = pass_in.get("buttonId", "null")
     # if statements denoting what color was received by the click action
-    if pass_in.get("key", "null") == 'red':
+    if color_in == 'red':
         color = 'tomato'
-    elif pass_in.get("key", "null") == 'green':
+    elif color_in == 'green':
         color = 'forestgreen'
-    elif pass_in.get("key", "null") == 'blue':
+    elif color_in == 'blue':
         color = 'aqua'
     else:
         color = 'No color fit the parameter'

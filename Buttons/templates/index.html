@@ -24,7 +24,7 @@
     <script>
         $(document).ready(function() {
             $(".buttons").click(function() {
-                $.ajax({url: "/find_color", data: {"key": this.id.valueOf()}, success: function(result) {
+                $.ajax({url: "/find_color", data: {"buttonId": this.id}, success: function(result) {
                     $("#textValue").html(result);
                     $(".colorview").css("background-color", result);
                 }});
